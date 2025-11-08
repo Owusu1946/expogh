@@ -77,8 +77,8 @@ export function DockNavigation() {
   const items = useMemo(() => SECTION_ITEMS, [])
 
   return (
-    <div className="pointer-events-none fixed inset-x-0 bottom-0 z-[60] flex justify-center pb-[calc(env(safe-area-inset-bottom)+0.5rem)] px-2 sm:pb-[calc(env(safe-area-inset-bottom)+1rem)] sm:px-4">
-      <Dock className="pointer-events-auto border-border/70 bg-background/85 backdrop-blur-md shadow-[0_12px_40px_-20px_rgba(15,23,42,0.45)]" disableMagnification>
+    <div className="pointer-events-none fixed inset-x-0 bottom-0 z-[60] flex items-center justify-center pb-[calc(env(safe-area-inset-bottom)+0.5rem)] px-2 sm:pb-[calc(env(safe-area-inset-bottom)+1rem)] sm:px-4">
+      <Dock className="pointer-events-auto mx-auto border-border/70 bg-background/85 backdrop-blur-md shadow-[0_12px_40px_-20px_rgba(15,23,42,0.45)]" disableMagnification>
         {items.map(({ id, label, icon: Icon, showOnMobile }) => (
           <DockIcon key={id} disableMagnification className={cn("px-1 sm:px-1.5", !showOnMobile && "hidden sm:block")}>
             <div className="relative">
@@ -92,15 +92,13 @@ export function DockNavigation() {
                 className={cn(
                   "group inline-flex size-9 items-center justify-center rounded-full transition sm:size-10",
                   "text-muted-foreground hover:text-foreground hover:bg-muted/60",
-                  activeId === id && "bg-primary/10 text-foreground ring-2 ring-primary/30",
-                  hoveredId === id && "scale-[1.06]"
+                  activeId === id && "bg-primary/10 text-foreground ring-2 ring-primary/30"
                 )}
                 aria-label={label}
               >
                 <Icon
                   className={cn(
-                    "size-3.5 transition-transform duration-200 sm:size-4",
-                    hoveredId === id && "-translate-y-0.5",
+                    "block size-3.5 leading-none transition-transform duration-200 sm:size-4",
                     activeId === id && "text-primary"
                   )}
                   aria-hidden

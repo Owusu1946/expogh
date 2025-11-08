@@ -207,14 +207,14 @@ export function SpotlightSearch({ isOpen, onClose }: SpotlightSearchProps) {
           />
 
           {/* Search Modal */}
-          <div className="fixed inset-0 z-[101] flex items-start justify-center px-3 pt-[10vh] sm:px-4 sm:pt-[15vh]">
+          <div className="fixed inset-0 z-[101] flex items-start justify-center px-2 pt-[8vh] sm:px-4 sm:pt-[15vh]">
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: -20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: -20 }}
               transition={{ type: "spring", duration: 0.3 }}
               className={cn(
-                "w-full max-w-2xl overflow-hidden rounded-xl border border-border/60 sm:rounded-2xl",
+                "w-full max-w-2xl overflow-hidden rounded-lg border border-border/60 sm:rounded-2xl",
                 "bg-background/95 shadow-2xl backdrop-blur-xl",
                 "ring-1 ring-black/5 dark:ring-white/5"
               )}
@@ -240,7 +240,7 @@ export function SpotlightSearch({ isOpen, onClose }: SpotlightSearchProps) {
               </div>
 
               {/* Results */}
-              <div className="max-h-[50vh] overflow-y-auto p-2 scroll-smooth sm:max-h-[60vh] sm:p-3">
+              <div className="max-h-[60vh] overflow-y-auto overscroll-contain p-2 scroll-smooth sm:max-h-[65vh] sm:p-3">
                 {filteredActions.length > 0 ? (
                   <div className="space-y-1">
                     {filteredActions.map((action, index) => (
@@ -253,7 +253,7 @@ export function SpotlightSearch({ isOpen, onClose }: SpotlightSearchProps) {
                         onClick={() => handleAction(action.href)}
                         onMouseEnter={() => setSelectedIndex(index)}
                         className={cn(
-                          "group flex w-full items-center justify-between rounded-lg px-3 py-3 text-left sm:px-4 sm:py-3.5",
+                          "group flex w-full items-center justify-between rounded-md px-3 py-3 text-left sm:rounded-lg sm:px-4 sm:py-3.5",
                           "transition-all duration-150",
                           selectedIndex === index
                             ? "bg-primary/10 ring-2 ring-primary/30"
@@ -262,12 +262,12 @@ export function SpotlightSearch({ isOpen, onClose }: SpotlightSearchProps) {
                       >
                         <div className="flex-1">
                           <div className={cn(
-                            "text-sm font-medium transition-colors sm:text-base",
+                            "text-[13px] font-medium transition-colors sm:text-base",
                             selectedIndex === index && "text-primary"
                           )}>
                             {action.title}
                           </div>
-                          <div className="text-xs text-muted-foreground sm:text-sm">
+                          <div className="text-[11px] text-muted-foreground sm:text-sm">
                             {action.description}
                           </div>
                         </div>
@@ -286,8 +286,8 @@ export function SpotlightSearch({ isOpen, onClose }: SpotlightSearchProps) {
               </div>
 
               {/* Footer */}
-              <div className="border-t border-border/60 bg-muted/20 px-3 py-2 sm:px-5 sm:py-3">
-                <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-[10px] text-muted-foreground sm:gap-x-4 sm:gap-y-2 sm:text-xs">
+              <div className="border-t border-border/60 bg-muted/20 px-3 py-2 pb-[calc(env(safe-area-inset-bottom)+0.5rem)] sm:px-5 sm:py-3">
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-[10px] leading-none text-muted-foreground sm:gap-x-4 sm:gap-y-2 sm:text-xs">
                   <span className="flex items-center gap-1.5">
                     <kbd className="rounded border border-border/60 bg-background px-1.5 py-0.5 font-medium shadow-sm">↑</kbd>
                     <kbd className="rounded border border-border/60 bg-background px-1.5 py-0.5 font-medium shadow-sm">↓</kbd>

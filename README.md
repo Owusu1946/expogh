@@ -55,7 +55,7 @@ To build and nurture a thriving community of Expo developers across Ghana, provi
 ### Special Features
 
 - **🔍 Smart Search**: Type to search sections or find text within content with auto-highlight
-- **⚡ Blazing Fast**: Optimized performance with Next.js 15 and React 19
+- **⚡ Blazing Fast**: Optimized performance with Next.js 16 and React 19
 - **📱 Mobile First**: Fully responsive design with touch-optimized interactions
 - **♿ Accessible**: WCAG compliant with keyboard navigation and screen reader support
 - **🎨 Beautiful UI**: Smooth animations powered by Framer Motion
@@ -69,7 +69,7 @@ To build and nurture a thriving community of Expo developers across Ghana, provi
 
 ```mermaid
 graph LR
-    A[Next.js 15] --> B[React 19]
+    A[Next.js 16] --> B[React 19]
     A --> C[TypeScript]
     B --> D[Framer Motion]
     C --> E[Tailwind CSS]
