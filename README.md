@@ -448,5 +448,3 @@ gantt
     <a href="https://github.com/expo-gh/website/stargazers">⭐ Star us on GitHub</a>
   </p>
 </div>
-#   e x p o g h  
- 
