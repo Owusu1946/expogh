@@ -24,6 +24,9 @@
     <a href="https://github.com/Owusu1946/expogh/blob/main/LICENSE">
       <img src="https://img.shields.io/github/license/Owusu1946/expogh?style=flat&color=6366f1" alt="License" />
     </a>
+    <a href="https://github.com/Owusu1946/expogh/blob/main/CODE_OF_CONDUCT.md">
+      <img src="https://img.shields.io/badge/Code%20of%20Conduct-Contributor%20Covenant-7c3aed" alt="Code of Conduct" />
+    </a>
   </p>
 </div>
 
@@ -326,11 +329,19 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3000
 
 ---
 
+## 🛡️ Community Standards
+
+- 📜 **License:** The project is distributed under the [MIT License](./LICENSE).
+- 🤝 **Code of Conduct:** We follow the [Contributor Covenant](./CODE_OF_CONDUCT.md). Please review it before participating.
+- 🧩 **Community Guidelines:** Issues, PRs, discussions, and events all fall under these policies to keep the space welcoming.
+
 ## 🤝 Contributing
 
 We welcome contributions from the community! Here's how you can help:
 
 ### Contribution Guidelines
+
+Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) before getting started.
 
 1. **Fork the repository**
 2. **Create a feature branch**
