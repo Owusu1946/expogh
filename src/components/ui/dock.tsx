@@ -143,7 +143,7 @@ const DockIcon = ({
       )}
       {...props}
     >
-      <div>{children}</div>
+      <div className="flex h-full w-full items-center justify-center">{children}</div>
     </motion.div>
   )
 }

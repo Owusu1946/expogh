@@ -55,14 +55,14 @@ export function OpenSource() {
         </div>
 
         <div className="mt-6 sm:mt-8">
-          <BentoGrid className="auto-rows-[14rem] sm:auto-rows-[16rem] md:auto-rows-[18rem]">
+          <BentoGrid className="auto-rows-[auto] gap-4 sm:auto-rows-[16rem] md:auto-rows-[18rem]">
             <BentoCard
               name="Why it matters"
               description="Starter kits reduce time-to-first-feature and unify best practices across apps."
               href="#"
               cta="Read the philosophy"
               Icon={Code2}
-              className="md:col-span-2"
+              className="sm:col-span-2 lg:col-span-2"
               background={<div className="absolute inset-0 -z-10" />}
             />
 
@@ -72,7 +72,7 @@ export function OpenSource() {
               href="#"
               cta="Get started"
               Icon={GitBranch}
-              className="md:col-span-1"
+              className="sm:col-span-1"
               background={<div className="absolute inset-0 -z-10" />}
             />
 
@@ -95,7 +95,7 @@ export function OpenSource() {
               </BlurFade>
             ))}
 
-            <BlurFade className="h-full md:col-span-3" delay={0.08}>
+            <BlurFade className="h-full sm:col-span-2 lg:col-span-3" delay={0.08}>
               <div className="grid gap-3 rounded-lg border border-border/60 p-3 sm:gap-4 sm:rounded-xl sm:p-4 md:grid-cols-3">
                 <div className="md:col-span-2">
                   <h3 className="text-sm font-medium sm:text-base">How to contribute</h3>
