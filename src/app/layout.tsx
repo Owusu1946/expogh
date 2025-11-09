@@ -5,6 +5,7 @@ import { PointerSmoothCursor } from "@/components/layout/pointer-smooth-cursor"
 import { SiteHeader } from "@/components/layout/site-header"
 import { DockNavigation } from "@/components/navigation/dock-navigation"
 import { Footer } from "@/components/layout/footer"
+import { BackToTopButton } from "@/components/ui/back-to-top-button"
 
 import "./globals.css"
 
@@ -58,6 +59,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <BackToTopButton />
         <DockNavigation />
       </body>
     </html>

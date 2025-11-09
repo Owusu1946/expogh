@@ -7,6 +7,8 @@ import { ArrowRight, ShieldCheck } from "lucide-react"
 import { siteConfig } from "@/config/site"
 import { Button } from "@/components/ui/button"
 import { Marquee } from "@/components/ui/marquee"
+import { AnimatedShinyText } from "@/components/ui/animated-shiny-text"
+import { MorphingText } from "@/components/ui/morphing-text"
 
 const communityFaces = [
   { initials: "AK", color: "bg-primary" },
@@ -23,6 +25,12 @@ const partnerNames = [
   "Figma",
 ]
 
+const heroMorphTexts = [
+  "Build Expo brilliance",
+  "Ship faster together",
+  "Lead Ghana's future",
+]
+
 export function HomeHero() {
   return (
     <section
@@ -30,32 +38,48 @@ export function HomeHero() {
       className="relative overflow-hidden border-b border-border/60 bg-background"
     >
       <div className="relative mx-auto flex max-w-5xl flex-col items-center px-4 pb-12 pt-12 text-center sm:px-6 sm:pb-16 sm:pt-16 md:pb-24 md:pt-24">
-        <motion.span
-          className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/80 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground sm:px-4 sm:text-xs sm:tracking-[0.24em]"
+        <motion.div
+          className="inline-flex items-center"
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
         >
-          Official Expo Ghana community
-        </motion.span>
+          <div className="group rounded-full border border-border/60 bg-background/90 px-1 py-0.5 shadow-[0_18px_50px_-25px_rgba(14,23,42,0.65)] backdrop-blur-md transition-all hover:border-primary/60 hover:bg-background">
+            <AnimatedShinyText
+              shimmerWidth={220}
+              className="mx-0 max-w-none inline-flex items-center gap-2 px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-foreground transition duration-300 group-hover:text-primary sm:text-xs sm:tracking-[0.24em]"
+            >
+              <span className="flex items-center gap-1">
+                <span className="text-lg leading-none">✨</span>
+                Official Expo Ghana Community
+              </span>
+              <ArrowRight
+                className="size-3 translate-x-0 transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:rotate-6"
+                aria-hidden
+              />
+            </AnimatedShinyText>
+          </div>
+        </motion.div>
 
-        <motion.h1
-          className="mt-4 max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-foreground sm:mt-6 sm:text-4xl md:text-5xl lg:text-6xl"
+        <motion.div
+          className="mt-6 w-full sm:mt-8"
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          Everything you need to build Expo apps that delight in Ghana and beyond
-        </motion.h1>
+          <MorphingText
+            texts={heroMorphTexts}
+            className="mx-auto max-w-4xl text-pretty text-foreground [text-shadow:0_18px_50px_rgba(15,23,42,0.28)] text-[1.9rem] font-extrabold leading-[0.92] sm:h-[4.25rem] sm:text-[3.2rem] md:h-[5rem] md:text-[4rem] lg:h-[6.25rem] lg:text-[5.1rem]"
+          />
+        </motion.div>
 
         <motion.p
-          className="mt-4 max-w-2xl text-sm text-muted-foreground sm:mt-6 sm:text-base md:text-lg"
+          className="mt-5 max-w-2xl text-sm text-muted-foreground sm:mt-7 sm:text-base"
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          Expo Ghana connects developers, designers, and founders with resources, mentorship,
-          and collaborations to launch world-class mobile experiences faster.
+          Expo Ghana convenes makers, mentors, and partners to fast-track bold mobile ideas.
         </motion.p>
 
         <motion.div
