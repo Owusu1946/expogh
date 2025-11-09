@@ -6,17 +6,24 @@
   <p align="center">
     <strong>The official Expo Ghana community website</strong>
   </p>
-  
+
   <p align="center">
     A sleek, minimal, and blazing-fast community platform built with Next.js and MagicUI components
   </p>
 
   <p align="center">
-    <a href="#features">Features</a> •
-    <a href="#tech-stack">Tech Stack</a> •
-    <a href="#getting-started">Getting Started</a> •
-    <a href="#project-structure">Structure</a> •
-    <a href="#contributing">Contributing</a>
+    <a href="https://github.com/Owusu1946/expogh/stargazers">
+      <img src="https://img.shields.io/github/stars/Owusu1946/expogh?style=flat&color=2b7fff" alt="GitHub stars" />
+    </a>
+    <a href="https://github.com/Owusu1946/expogh/network/members">
+      <img src="https://img.shields.io/github/forks/Owusu1946/expogh?style=flat&color=10b981" alt="GitHub forks" />
+    </a>
+    <a href="https://github.com/Owusu1946/expogh/actions">
+      <img src="https://img.shields.io/github/actions/workflow/status/Owusu1946/expogh/ci.yml?label=CI&style=flat&color=f59e0b" alt="CI status" />
+    </a>
+    <a href="https://github.com/Owusu1946/expogh/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/Owusu1946/expogh?style=flat&color=6366f1" alt="License" />
+    </a>
   </p>
 </div>
 
@@ -111,8 +118,8 @@ graph LR
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/expo-ghana/website.git
-cd website
+git clone https://github.com/Owusu1946/expogh.git
+cd expogh
 ```
 
 2. **Install dependencies**
@@ -405,7 +412,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Website**: [expoghana.community](https://expoghana.community)
 - **Twitter**: [@expoghana](https://twitter.com/expoghana)
-- **GitHub**: [github.com/expo-gh](https://github.com/expo-gh)
+- **GitHub**: [github.com/Owusu1946/expogh](https://github.com/Owusu1946/expogh)
 - **Email**: hello@expoghana.community
 
 ---
@@ -415,36 +422,39 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```mermaid
 gantt
     title Development Roadmap
-    dateFormat  YYYY-MM
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %d
     section Phase 1
-    Core Website Launch           :done, 2024-11, 2024-12
-    Mobile Optimization          :done, 2024-12, 2024-12
+    Project kick-off             :done, 2025-11-07, 2d
+    Design system foundations    :done, 2025-11-09, 3d
     section Phase 2
-    User Authentication          :active, 2025-01, 2025-02
-    Event Registration System    :2025-02, 2025-03
+    Core website launch          :active, 2025-11-12, 10d
+    Mobile polish & accessibility:2025-11-22, 7d
     section Phase 3
-    Member Dashboard             :2025-03, 2025-04
-    Project Showcase Platform    :2025-04, 2025-05
+    Community programs           :2025-12-01, 8d
+    Partner onboarding           :2025-12-10, 7d
     section Phase 4
-    Community Forum              :2025-05, 2025-06
-    Learning Platform            :2025-06, 2025-07
+    Member dashboard             :2026-01-05, 14d
+    Learning platform            :2026-01-20, 21d
 ```
 
-### Upcoming Features
+## ⭐ Star history
 
-- [ ] **Member Authentication** - Sign up and login system
-- [ ] **Event RSVP** - Register for meetups and events
-- [ ] **Project Submissions** - Submit open-source projects
-- [ ] **Resource Voting** - Community curated resources
-- [ ] **Newsletter Integration** - Automated email campaigns
-- [ ] **Job Board** - Community job postings
-- [ ] **Mentorship Matching** - Connect mentors with mentees
+[![Star History Chart](https://api.star-history.com/svg?repos=Owusu1946/expogh&type=Date)](https://star-history.com/#Owusu1946/expogh&Date)
+
+## 👥 Contributors
+
+Thanks to everyone who has contributed to this project.
+
+<a href="https://github.com/Owusu1946/expogh/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Owusu1946/expogh" alt="Expo Ghana contributors" />
+</a>
 
 ---
 
 <div align="center">
   <p>Made with ❤️ by the Expo Ghana Community</p>
   <p>
-    <a href="https://github.com/expo-gh/website/stargazers">⭐ Star us on GitHub</a>
+    <a href="https://github.com/Owusu1946/expogh/stargazers">⭐ Star us on GitHub</a>
   </p>
 </div>

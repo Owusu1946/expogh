@@ -88,17 +88,13 @@ export function Blog() {
     }
     try {
       setLoading(true)
-      // Simulate API call delay
       await new Promise((resolve) => setTimeout(resolve, 1200))
-      // Placeholder for API call
       // await fetch('/api/subscribe', { method: 'POST', body: JSON.stringify({ email }) })
       
-      // Close modal and reset form
       setOpen(false)
       setEmail("")
       setLoading(false)
       
-      // Wait a bit for modal to close, then fire confetti and show toast
       setTimeout(() => {
         confettiRef.current?.fire({ particleCount: 140, spread: 70, origin: { y: 0.3 } })
         setToast("Subscribed! Check your inbox.")

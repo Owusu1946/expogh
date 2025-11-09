@@ -5,11 +5,14 @@ import Link from "next/link"
 import Image from "next/image"
 import { SpotlightSearch, SpotlightSearchTrigger } from "@/components/ui/spotlight-search"
 import { ContactDrawer } from "@/components/layout/contact-drawer"
-import { Mail, Search } from "lucide-react"
+import { Mail, Search, Heart, Github, Star } from "lucide-react"
+import { useGithubStars } from "@/hooks/use-github-stars"
 
 export function SiteHeader() {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [isContactOpen, setIsContactOpen] = useState(false)
+  const { stars, isLoading } = useGithubStars()
+  const starCount = stars !== null ? stars.toLocaleString("en-US") : isLoading ? "…" : "-"
 
   return (
     <>
@@ -45,6 +48,32 @@ export function SiteHeader() {
             >
               <Search className="size-4" />
             </button>
+
+            {/* Support Button */}
+            <Link
+              href="/sponsor"
+              className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/60 px-2.5 py-1.5 text-sm font-medium transition hover:border-border hover:bg-background/80 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/20 sm:px-3 sm:py-2"
+              aria-label="Support"
+            >
+              <Heart className="size-4 text-primary" />
+              <span className="hidden sm:inline">Support</span>
+            </Link>
+
+            {/* GitHub Star Button */}
+            <Link
+              href="https://github.com/Owusu1946/expogh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/60 px-2.5 py-1.5 text-sm font-medium transition hover:border-border hover:bg-background/80 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/20 sm:px-3 sm:py-2"
+              aria-label="Star on GitHub"
+            >
+              <Github className="size-4" />
+              <span className="hidden sm:inline">Star</span>
+              <span className="hidden sm:inline-flex items-center gap-1 rounded-full border border-border/60 bg-muted/50 px-2 py-0.5 text-[11px] font-semibold text-muted-foreground">
+                <Star className="size-3 text-amber-500" />
+                {starCount}
+              </span>
+            </Link>
 
             {/* Contact Button */}
             <button
