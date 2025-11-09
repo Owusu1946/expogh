@@ -108,11 +108,11 @@ graph LR
 
 | Technology | Version | Purpose |
 |------------|---------|---------|
-| **Next.js** | 15.x | React framework with App Router |
-| **React** | 19.x | UI library |
-| **TypeScript** | 5.x | Type safety |
-| **Tailwind CSS** | 3.x | Utility-first styling |
-| **Framer Motion** | Latest | Animation library |
+| **Next.js** | 16.0.1 | React framework with App Router |
+| **React** | 19.2.0 | UI library |
+| **TypeScript** | ^5 | Type safety |
+| **Tailwind CSS** | ^4 | Utility-first styling |
+| **Framer Motion** | 12.23.24 | Animation library |
 
 ### UI Components & Libraries
 
