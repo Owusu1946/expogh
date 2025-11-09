@@ -28,10 +28,29 @@
       <img src="https://img.shields.io/badge/Code%20of%20Conduct-Contributor%20Covenant-7c3aed" alt="Code of Conduct" />
     </a>
   </p>
+
+  <p align="center">
+    <sub>
+      <strong>Navigate:</strong>
+      <a href="#about">About</a> ·
+      <a href="#features">Features</a> ·
+      <a href="#tech-stack">Tech&nbsp;Stack</a> ·
+      <a href="#getting-started">Getting&nbsp;Started</a> ·
+      <a href="#project-structure">Structure</a> ·
+      <a href="#design-system">Design</a> ·
+      <a href="#configuration">Configuration</a> ·
+      <a href="#community-standards">Community</a> ·
+      <a href="#contributing">Contributing</a> ·
+      <a href="#roadmap">Roadmap</a> ·
+      <a href="#star-history">Stars</a> ·
+      <a href="#contributors">Contributors</a>
+    </sub>
+  </p>
 </div>
 
 ---
 
+<a id="about"></a>
 ## 📖 About
 
 Expo Ghana connects developers, designers, and founders with resources, mentorship, and collaborations to launch world-class mobile experiences faster. This website serves as the central hub for our community activities, events, resources, and open-source projects.
@@ -47,6 +66,7 @@ To build and nurture a thriving community of Expo developers across Ghana, provi
 
 ---
 
+<a id="features"></a>
 ## ✨ Features
 
 ### Core Features
@@ -73,6 +93,7 @@ To build and nurture a thriving community of Expo developers across Ghana, provi
 
 ---
 
+<a id="tech-stack"></a>
 ## 🛠️ Tech Stack
 
 ### Framework & Core
@@ -108,6 +129,7 @@ graph LR
 
 ---
 
+<a id="getting-started"></a>
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -164,6 +186,7 @@ npm run lint
 
 ---
 
+<a id="project-structure"></a>
 ## 📁 Project Structure
 
 ```
@@ -270,6 +293,7 @@ sequenceDiagram
 
 ---
 
+<a id="design-system"></a>
 ## 🎨 Design System
 
 ### Color Palette
@@ -299,6 +323,7 @@ Desktop: Generous spacing with 1.2x scale
 
 ---
 
+<a id="configuration"></a>
 ## 🔧 Configuration
 
 ### Site Configuration
@@ -329,12 +354,14 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3000
 
 ---
 
+<a id="community-standards"></a>
 ## 🛡️ Community Standards
 
 - 📜 **License:** The project is distributed under the [MIT License](./LICENSE).
 - 🤝 **Code of Conduct:** We follow the [Contributor Covenant](./CODE_OF_CONDUCT.md). Please review it before participating.
 - 🧩 **Community Guidelines:** Issues, PRs, discussions, and events all fall under these policies to keep the space welcoming.
 
+<a id="contributing"></a>
 ## 🤝 Contributing
 
 We welcome contributions from the community! Here's how you can help:
@@ -428,6 +455,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
+<a id="roadmap"></a>
 ## 🗺️ Roadmap
 
 ```mermaid
@@ -449,10 +477,12 @@ gantt
     Learning platform            :2026-01-20, 21d
 ```
 
+<a id="star-history"></a>
 ## ⭐ Star history
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Owusu1946/expogh&type=Date)](https://star-history.com/#Owusu1946/expogh&Date)
 
+<a id="contributors"></a>
 ## 👥 Contributors
 
 Thanks to everyone who has contributed to this project.
