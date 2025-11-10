@@ -53,7 +53,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-background text-foreground antialiased`}
       >
-        <PointerSmoothCursor />
+      {/*}  <PointerSmoothCursor />*/}
         <SiteHeader />
         <main className="min-h-screen bg-gradient-to-b from-background via-background/95 to-background">
           {children}
